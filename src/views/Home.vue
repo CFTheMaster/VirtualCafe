@@ -4,7 +4,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
-    <header>
+  <header>
     <img alt="logo" class="logo" src="../assets/1_112.png" width="125" height="125" />
 
     <div class="wrapper">
@@ -16,8 +16,8 @@ import TheWelcome from '../components/TheWelcome.vue'
     <TheWelcome />
   </main>
   <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <router-link :to="{ name: 'Home' }">Home</router-link> |
+    <router-link :to="{ name: 'About' }">About</router-link>
   </div>
 </template>
 
@@ -28,12 +28,12 @@ header {
 
 a,
 .green {
-    text-decoration: none;
-    text-align: center;
-    color: #00ff00;
-    transition: 0.4s;
-    padding: 3px;
-    background: content-box #6f373c;
+  text-decoration: none;
+  text-align: center;
+  color: #00ff00;
+  transition: 0.4s;
+  padding: 3px;
+  background: content-box #6f373c;
 }
 
 .logo {
