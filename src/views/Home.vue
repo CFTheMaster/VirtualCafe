@@ -8,7 +8,7 @@ import TheWelcome from '../components/TheWelcome.vue'
     <img alt="logo" class="logo" src="../assets/1_112.png" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Welcome to the Virtual Cafe" />
+      <HelloWorld msg="Welcome to The Virtual Cafe" />
     </div>
   </header>
 

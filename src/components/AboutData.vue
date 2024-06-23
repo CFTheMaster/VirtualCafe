@@ -14,13 +14,6 @@ export default {
         return 1;
       }
     },
-    prettyDate2(time) {
-      var date = new Date(parseInt(time));
-      return date.toLocaleTimeString(navigator.language, {
-        hour: '2-digit',
-        minute:'2-digit'
-    });
-}
   }
 }
 </script>
@@ -29,12 +22,20 @@ export default {
   <WelcomeItem>
     <template #heading>Opening hours</template>
 
-    <div class="green">
-      <h1 v-if="isWeekend=1">
+    <div class="green" v-if="isWeekend=1">
+      <h1>
         The Virtual Cafe is not open on the weekends
-      </h1>  
-      <p>open on weekdays from 12pm to 8pm UTC</p><br>
+      </h1>
+      
     </div>
+    <div class="green" v-else>
+      <h1>
+        The Virtual Cafe is open between these times
+      </h1> 
+      <h3>{{new Date('2024-06-24' + 'T12:00:00.000Z').getHours()}}:{{new Date('2024-06-24' + 'T12:00:00.000Z').getMinutes()}}  to {{new Date('2024-06-24' + 'T20:00:00.000Z').getHours()}}:{{new Date('2024-06-24' + 'T20:00:00.000Z').getMinutes()}}</h3>
+      Time is based on your current local time
+    </div>
+
   </WelcomeItem>
   
 </template>

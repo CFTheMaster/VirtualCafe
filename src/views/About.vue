@@ -3,14 +3,15 @@ import AboutData from '../components/AboutData.vue'
 </script>
 
 <template>
-    <h1>test</h1>
+    
     <main>
         <AboutData />
-    </main>
-    <div id="nav">
+        <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
   </div>
+    </main>
+    
 </template>
 
 <style scoped>
