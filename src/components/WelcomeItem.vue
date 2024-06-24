@@ -5,6 +5,12 @@
         <slot name="heading"></slot>
       </h3>
       <slot></slot>
+      <div id="nav">
+      <router-link :to="{ name: 'Home' }">Home</router-link> |
+      <router-link :to="{ name: 'About' }">About</router-link>|
+      <router-link to="https://discord.gg/7HRNwrpEev">Discord</router-link>|
+      <router-link to="https://vrc.group/CAFE.3246">VRChat Group</router-link>
+    </div>
     </div>
   </div>
 </template>
@@ -19,6 +25,15 @@
 .details {
   flex: 1;
   margin-left: 1rem;
+}
+a,
+.nav {
+  text-decoration: none;
+  text-align: center;
+  color: #00ff00;
+  transition: 0.4s;
+  padding: 3px;
+  background: content-box #6f373c;
 }
 
 i {

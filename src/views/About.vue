@@ -5,10 +5,6 @@ import AboutData from '../components/AboutData.vue'
 <template>
   <main>
     <AboutData />
-    <div id="nav">
-      <router-link :to="{ name: 'Home' }">Home</router-link> |
-      <router-link :to="{ name: 'About' }">About</router-link>
-    </div>
   </main>
 </template>
 
