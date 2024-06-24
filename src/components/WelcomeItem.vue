@@ -8,8 +8,8 @@
       <div id="nav">
       <router-link :to="{ name: 'Home' }">Home</router-link> |
       <router-link :to="{ name: 'About' }">About</router-link>|
-      <router-link to="https://discord.gg/7HRNwrpEev">Discord</router-link>|
-      <router-link to="https://vrc.group/CAFE.3246">VRChat Group</router-link>
+      <a href="https://discord.gg/7HRNwrpEev">Discord</a> |
+      <a href="https://vrc.group/CAFE.3246">VRChat Group</a> 
     </div>
     </div>
   </div>
