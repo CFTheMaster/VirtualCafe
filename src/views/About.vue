@@ -11,11 +11,12 @@ import AboutData from '../components/AboutData.vue'
 <style scoped>
 a,
 .green {
-  text-decoration: none;
-  text-align: center;
-  color: #00ff00;
-  transition: 0.4s;
-  padding: 3px;
-  background: content-box #6f373c;
+  color: white;
+  font-size: 20px;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
 </style>

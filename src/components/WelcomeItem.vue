@@ -6,12 +6,13 @@
       </h3>
       <slot></slot>
       <div id="nav">
-      <router-link :to="{ name: 'Home' }">Home</router-link> |
-      <router-link :to="{ name: 'About' }">About</router-link>|
-      <a href="https://discord.gg/7HRNwrpEev">Discord</a> |
-      <a href="https://vrc.group/CAFE.3246">VRChat Group</a> 
+        <router-link :to="{ name: 'Home' }">Home</router-link> |
+        <router-link :to="{ name: 'About' }">About</router-link>|
+        <a href="https://discord.gg/7HRNwrpEev">Discord</a> |
+        <a href="https://vrc.group/CAFE.3246">VRChat Group</a>
+      </div>
     </div>
-    </div>
+    <div class="push"></div>
   </div>
 </template>
 
@@ -20,6 +21,7 @@
   margin-top: 2rem;
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 .details {
@@ -28,12 +30,13 @@
 }
 a,
 .nav {
-  text-decoration: none;
-  text-align: center;
-  color: #00ff00;
-  transition: 0.4s;
-  padding: 3px;
-  background: content-box #6f373c;
+  color: white;
+  font-size: 20px;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
 
 i {
@@ -47,10 +50,13 @@ i {
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: var(--color-heading);
+  color: white;
+  font-size: 50px;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
 
 @media (min-width: 1024px) {

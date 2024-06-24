@@ -21,7 +21,9 @@ export default {
   <WelcomeItem>
     <template #heading>Opening hours</template>
 
-    <div class="green" v-if="(isWeekend === 0)"><h1>The Virtual Cafe is not open on the weekends</h1></div>
+    <div class="green" v-if="isWeekend === 0">
+      <h1>The Virtual Cafe is not open on the weekends</h1>
+    </div>
     <div class="green" v-else>
       <h1>The Virtual Cafe is open between these times</h1>
       <h3>
@@ -40,11 +42,22 @@ export default {
 <style scoped>
 a,
 .green {
-  text-decoration: none;
-  text-align: center;
-  color: #00ff00;
-  transition: 0.4s;
-  padding: 3px;
-  background: content-box #6f373c;
+  color: white;
+  font-size: 20px;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
+}
+
+h3 {
+  color: white;
+  font-size: 90px;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
 </style>

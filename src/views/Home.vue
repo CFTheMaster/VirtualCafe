@@ -24,12 +24,13 @@ header {
 
 a,
 .green {
-  text-decoration: none;
-  text-align: center;
-  color: #00ff00;
-  transition: 0.4s;
-  padding: 3px;
-  background: content-box #6f373c;
+  color: white;
+  font-size: 20px;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
 
 .logo {
@@ -39,6 +40,8 @@ a,
 
 @media (min-width: 1024px) {
   header {
+    align-items: center;
+    justify-content: center;
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
@@ -46,6 +49,8 @@ a,
 
   .logo {
     margin: 0 2rem 0 0;
+    align-items: center;
+    justify-content: center;
   }
 
   header .wrapper {

@@ -15,10 +15,13 @@ defineProps({
 
 <style scoped>
 h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
+  color: white;
+  font-size: 4rem;
+  text-shadow:
+    0.07em 0 black,
+    0 0.07em black,
+    -0.07em 0 black,
+    0 -0.07em black;
 }
 
 h3 {
