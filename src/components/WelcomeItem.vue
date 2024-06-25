@@ -7,7 +7,7 @@
       <slot></slot>
       <div id="nav">
         <router-link :to="{ name: 'Home' }">Home</router-link> |
-        <router-link :to="{ name: 'About' }">About</router-link>|
+        <router-link :to="{ name: 'About' }">About</router-link> |
         <a href="https://discord.gg/7HRNwrpEev">Discord</a> |
         <a href="https://vrc.group/CAFE.3246">VRChat Group</a>
       </div>
