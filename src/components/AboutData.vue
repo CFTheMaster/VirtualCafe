@@ -2,39 +2,15 @@
 import WelcomeItem from './WelcomeItem.vue'
 </script>
 
-<script>
-export default {
-  methods: {
-    isWeekend() {
-      var myDate = new Date()
-      if (!(myDate.getDay() % 6)) {
-        return 0
-      } else {
-        return 1
-      }
-    }
-  }
-}
-</script>
-
 <template>
   <WelcomeItem>
-    <template #heading>Opening hours</template>
+    <template #heading>About Us:</template>
 
-    <div class="green" v-if="isWeekend === 0">
-      <h1>The Virtual Cafe is not open on the weekends</h1>
-    </div>
-    <div class="green" v-else>
-      <h1>The Virtual Cafe is open between these times</h1>
-      <h3>
-        {{ new Date('2024-06-24' + 'T12:00:00.000Z').getHours() }}:{{
-          new Date('2024-06-24' + 'T12:00:00.000Z').getMinutes().toString().padStart(2, '0')
-        }}
-        to {{ new Date('2024-06-24' + 'T20:00:00.000Z').getHours() }}:{{
-          new Date('2024-06-24' + 'T20:00:00.000Z').getMinutes().toString().padStart(2, '0')
-        }}
+    <div class="green">
+      <h1>Some info</h1>
+      <h3 class="info_text">
+        <p>1, 2, 3, 4, 5, 6, 7, 8</p>
       </h3>
-      Time is based on your current local time
     </div>
   </WelcomeItem>
 </template>

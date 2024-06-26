@@ -13,7 +13,10 @@
           <li>
             <router-link :to="{ name: 'About' }">About</router-link>
           </li>
-
+        </ul>
+      </li>
+      <li class="nav__item">
+        <ul>
           <li>
             <a href="https://discord.gg/7HRNwrpEev">Discord</a>
           </li>
